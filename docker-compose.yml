@@ -1,0 +1,6 @@
+version: '2'
+
+services:
+    build-base-image:
+        build: .
+        image: livepy-base-onbuild 

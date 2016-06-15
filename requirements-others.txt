@@ -1,0 +1,10 @@
+momoko
+tornado-celery
+requests
+redis
+msgpack-python
+qiniu
+sqlalchemy
+beautifulsoup4
+lxml
+pingpp
