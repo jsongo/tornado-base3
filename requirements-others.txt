@@ -8,3 +8,4 @@ sqlalchemy
 beautifulsoup4
 lxml
 pingpp
+tornetcd
