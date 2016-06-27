@@ -12,3 +12,4 @@ tornetcd
 thrift
 zoonado
 kiel # kafka
+mysql-python
