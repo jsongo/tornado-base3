@@ -1,4 +1,4 @@
-from daocloud.io/python:2.7
+from daocloud.io/python:3.6
 RUN pip install --upgrade pip
 RUN pip install tornado
 COPY requirements.txt /
