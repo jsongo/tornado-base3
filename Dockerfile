@@ -6,7 +6,8 @@ RUN pip install -r /requirements.txt
 RUN mkdir /app
 WORKDIR /app
 
-RUN pip install supervisor
+RUN git clone https://github.com/Supervisor/supervisor.git
+RUN cd supervisor && python setup.py install
 RUN echo_supervisord_conf > supervisord.conf && \
     echo "[include]" >> supervisord.conf && \
     echo "files = /etc/supervisord.d/*.ini" >> supervisord.conf
