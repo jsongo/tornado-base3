@@ -21,7 +21,7 @@ EXPOSE 9021
 RUN apt-get update
 # RUN apt-get install -y libmysqld-dev
 RUN apt-get install -y libpq-dev python-dev
-COPY requirements-others.txt /
+ONBUILD COPY requirements-others.txt /
 RUN pip install -v -r /requirements-others.txt
 # 时区
 RUN cp /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime
